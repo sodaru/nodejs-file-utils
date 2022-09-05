@@ -1,6 +1,6 @@
 {
   "name": "nodejs-file-store",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "File Read and Write Apis with Cached content in NodeJs",
   "keywords": [
     "Nodejs",
