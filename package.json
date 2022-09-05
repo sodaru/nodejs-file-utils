@@ -1,5 +1,5 @@
 {
-  "name": "nodejs-file-store",
+  "name": "nodejs-file-utils",
   "version": "1.0.0",
   "description": "File Read and Write Apis with Cached content in NodeJs",
   "keywords": [
