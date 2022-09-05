@@ -1,0 +1,72 @@
+{
+  "name": "nodejs-file-store",
+  "version": "0.0.0",
+  "description": "File Read and Write Apis with Cached content in NodeJs",
+  "keywords": [
+    "Nodejs",
+    "readFile",
+    "writeFile",
+    "JSON",
+    "ignorefiles",
+    "Yaml"
+  ],
+  "main": "./dist/cjs/index.js",
+  "module": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sodaru/nodejs-file-store.git"
+  },
+  "author": "Raghavendra K R <raghavendra@sodaru.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sodaru/nodejs-file-store/issues"
+  },
+  "homepage": "https://github.com/sodaru/nodejs-file-store#readme",
+  "scripts": {
+    "clean": "npx rimraf dist",
+    "prettier": "npx prettier --check --ignore-unknown ./**/*",
+    "eslint": "npx eslint ./ --no-error-on-unmatched-pattern",
+    "tsc": "npx tsc",
+    "tsc-cjs": "npx tsc --project tsconfig.cjs.json",
+    "build": "npm run prettier && npm run eslint && npm run clean && npm run tsc && npm run tsc-cjs",
+    "pretest": "npm run build",
+    "test": "echo 'No tests here'",
+    "prepack": "npm test",
+    "postversion": "git push --follow-tags"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.184",
+    "@types/node": "^18.7.14",
+    "eslint-config-sodaru": "^1.0.0",
+    "prettier-config-sodaru": "^1.0.0",
+    "@types/js-yaml": "^4.0.5",
+    "lodash": "^4.17.21",
+    "js-yaml": "^4.1.0",
+    "rimraf": "^3.0.2",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.2"
+  },
+  "peerDependencies": {
+    "tslib": "^2.4.0",
+    "js-yaml": "^4.1.0",
+    "lodash": "^4.17.21"
+  },
+  "peerDependenciesMeta": {
+    "js-yaml": {
+      "optional": true
+    },
+    "lodash": {
+      "optional": true
+    }
+  },
+  "prettier": "prettier-config-sodaru",
+  "eslintConfig": {
+    "extends": [
+      "eslint-config-sodaru"
+    ]
+  }
+}
