@@ -1,6 +1,6 @@
 {
   "name": "nodejs-file-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "File Read and Write Apis with Cached content in NodeJs",
   "keywords": [
     "Nodejs",
